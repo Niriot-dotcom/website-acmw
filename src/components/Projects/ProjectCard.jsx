@@ -16,7 +16,6 @@ function ProjectCard(props) {
       `project-modal-overlay-${props.project.id}`
     );
     overlay?.addEventListener("click", toggleModal);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [show, props.project.id]);
 
   return (
