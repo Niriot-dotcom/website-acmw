@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
-const Myclass = plugin(function({addUtilities }){
+const plugin = require("tailwindcss/plugin");
+const Myclass = plugin(function ({ addUtilities }) {
   addUtilities({
-    ".my-rotate-y-180":{
-      transform: "rotateY(180deg)"
+    ".my-rotate-y-180": {
+      transform: "rotateY(180deg)",
     },
-    ".preserve-3d":{
+    ".preserve-3d": {
       transformStyle: "preserve-3d",
     },
     ".perspective": {
@@ -14,8 +14,8 @@ const Myclass = plugin(function({addUtilities }){
     ".backface-hidden": {
       backfaceVisibility: "hidden",
     },
-  })
-}) 
+  });
+});
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -31,4 +31,3 @@ module.exports = {
   },
   plugins: [Myclass],
 };
-
