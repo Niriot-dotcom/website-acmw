@@ -18,7 +18,14 @@ function Contact() {
         <p>Teléfono: </p>
         </div>
       </div>
-      <div>Informe</div>
+      <div>
+        <label>Nombre: </label><input type="text" required></input>
+        <label>Apellido: </label><input type="text" required></input>
+        <label>Teléfono: </label><input type="text" required></input>
+        <label>Correo: </label><input type="email" required ></input>
+        <label>Asunto: </label><input type="text" required></input>
+        <button type="submit">Enviar</button>
+      </div>
     </div>
   );
 }
