@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../components/contact/ContactForm";
 
 function Contact() {
   return (
@@ -18,14 +19,7 @@ function Contact() {
         <p>Teléfono: </p>
         </div>
       </div>
-      <div>
-        <label>Nombre: </label><input type="text" required></input>
-        <label>Apellido: </label><input type="text" required></input>
-        <label>Teléfono: </label><input type="text" required></input>
-        <label>Correo: </label><input type="email" required ></input>
-        <label>Asunto: </label><input type="text" required></input>
-        <button type="submit">Enviar</button>
-      </div>
+      <ContactForm/>
     </div>
   );
 }
